@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JS DOM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <div class="innerContainer">
+            <div class="right-toggle">
+                <form id="signIn">
+                    <h3>Sign In</h3>
+                    <h5>Sign-in with social media:</h5>
+                    <div class="social-media">
+                        <i class="fa fab fa-google" aria-hidden="true"></i>
+                        <i class="fa fab fab fa-github" aria-hidden="true"></i>
+                        <i class="fa fab fab fab fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fab fab fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" placeholder="Username" required>
+                    <label for="password">Enter Password: </label>
+                    <div id="pwd-box">
+                        <input type="password" name="password" id="pwd-show" required placeholder="Password">
+                        <span class="forgotpwd"></span>
+                        <!-- Forgot password button click edit -->
+                        <button type="button" id="show-pwd-sign-in"><i class="fa far far fa-eye" id="eye" aria-hidden="true"></i></button>
+                    </div>
+                    <div id="terms-privacy">
+                        <input type="checkbox" name="chkbx-1"><label for="chkbx-1"><span>Aggree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</span></label>
+                    </div>
+                    <button type="submit" id="sign-in-btn">Sign In</button>
+                </form>
+            </div>
+            <div class="left-toggle">
+                <form id="signUp">
+                    <h3>Sign-up with social media</h3>
+                    <h3></h3>
+                    <div class="social-media">
+                        <i class="fa fab fa-google" aria-hidden="true"></i>
+                        <i class="fa fab fab fa-github" aria-hidden="true"></i>
+                        <i class="fa fab fab fab fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fab fab fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <label for="new-username">Create Username: </label>
+                    <input type="text" name="new-username" placeholder="Create Username" required>
+                    <label for="email">Email Address: </label>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <label for="new-password">Generate Pasword: </label>
+                    <input type="password" name="new-password" required placeholder="Create Password">
+                    <br>
+                    <input type="passowrd" name="confirm-password" required placeholder="Confirm Password">
+                    <!-- Forgot password button click edit -->
+                    <div id="show-pwd">
+                        <input type="checkbox" name="show-new-current-pwd"><label for="show-new-current-pwd">Show password.</label>
+                    </div>
+                    <button type="button" id="sign-up-btn" name="sign-up">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-btn-toggle">
+            <p>Dont have any account? Create a new account.</p>
+            <button type="button" id="sign-btn">Sign Up</button>
+        </div>
+        <div class="left-btn-toggle">
+            <p>Already have an account? Log in Now.</p>
+            <button type="button" id="log-btn">Log In</button>
+        </div>
+        <div id="shadow">
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
